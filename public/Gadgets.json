@@ -1,0 +1,172 @@
+[
+	{
+		"product_id": "P101",
+		"product_title": "Apple MacBook Pro 16\" M1 Pro",
+		"product_image": "https://i.ibb.co.com/ySNW9dd/macbook-pro-16.jpg",
+		"category": "Laptop",
+		"price": 2499.99,
+		"description": "The powerful and versatile MacBook Pro with the M1 Pro chip, delivering unmatched performance for professionals.",
+		"Specification": [
+			"16-inch Liquid Retina XDR display",
+			"M1 Pro chip with 10-core CPU",
+			"16GB RAM",
+			"1TB SSD",
+			"macOS Ventura"
+		],
+		"availability": true,
+		"rating": 4.8
+	},
+	{
+		"product_id": "P102",
+		"product_title": "Dell XPS 13 Plus",
+		"product_image": "https://i.ibb.co.com/1KNbWz4/dell-xps-13-plus.jpg",
+		"category": "Laptop",
+		"price": 1999.99,
+		"description": "An ultra-slim and premium laptop with a stunning OLED display and top-tier performance.",
+		"Specification": [
+			"13.4-inch OLED touchscreen",
+			"Intel Core i7-12700H",
+			"16GB RAM",
+			"1TB SSD",
+			"Windows 11"
+		],
+		"availability": true,
+		"rating": 4.6
+	},
+	{
+		"product_id": "P103",
+		"product_title": "HP Spectre x360 14",
+		"product_image": "https://i.ibb.co.com/8XDB0HP/hp-spectre-x360-14.jpg",
+		"category": "Laptop",
+		"price": 1699.99,
+		"description": "A sleek 2-in-1 laptop offering premium design and excellent battery life.",
+		"Specification": [
+			"13.5-inch OLED display",
+			"Intel Core i7-1260P",
+			"16GB RAM",
+			"512GB SSD",
+			"Windows 11"
+		],
+		"availability": true,
+		"rating": 4.5
+	},
+	{
+		"product_id": "P104",
+		"product_title": "Lenovo ThinkPad X1 Carbon Gen 11",
+		"product_image": "https://i.ibb.co.com/KKFt1kG/thinkpad-x1-carbon-gen11.jpg",
+		"category": "Laptop",
+		"price": 1899.99,
+		"description": "Business-class laptop with robust build quality and enterprise features.",
+		"Specification": [
+			"14-inch WUXGA display",
+			"Intel Core i7-1360P",
+			"16GB RAM",
+			"1TB SSD",
+			"Windows 11 Pro"
+		],
+		"availability": true,
+		"rating": 4.7
+	},
+	{
+		"product_id": "P105",
+		"product_title": "Asus ROG Zephyrus G14",
+		"product_image": "https://i.ibb.co.com/Dbc4rW7/rog-zephyrus-g14.jpg",
+		"category": "Laptop",
+		"price": 1599.99,
+		"description": "A compact and powerful gaming laptop featuring the AMD Ryzen 9 and GeForce RTX 4060.",
+		"Specification": [
+			"14-inch QHD+ display",
+			"AMD Ryzen 9 6900HS",
+			"16GB RAM",
+			"1TB SSD",
+			"Windows 11"
+		],
+		"availability": true,
+		"rating": 4.8
+	},
+	{
+		"product_id": "P106",
+		"product_title": "Microsoft Surface Laptop Studio",
+		"product_image": "https://i.ibb.co.com/TtXDXmz/surface-laptop-studio.jpg",
+		"category": "Laptop",
+		"price": 2099.99,
+		"description": "A versatile laptop with a unique hinge design for creative professionals.",
+		"Specification": [
+			"14.4-inch PixelSense Flow display",
+			"Intel Core i7-11370H",
+			"32GB RAM",
+			"1TB SSD",
+			"Windows 11"
+		],
+		"availability": false,
+		"rating": 4.4
+	},
+	{
+		"product_id": "P107",
+		"product_title": "Apple iPhone 15 Pro Max",
+		"product_image": "https://i.ibb.co.com/1TC6fPj/iphone-15-pro-max.jpg",
+		"category": "Smartphone",
+		"price": 1199.99,
+		"description": "Apple's most advanced iPhone with a titanium design and the A17 Pro chip.",
+		"Specification": [
+			"6.7-inch Super Retina XDR display",
+			"A17 Pro chip",
+			"48MP camera system",
+			"256GB storage",
+			"iOS 17"
+		],
+		"availability": true,
+		"rating": 4.9
+	},
+	{
+		"product_id": "P108",
+		"product_title": "Samsung Galaxy S23 Ultra",
+		"product_image": "https://i.ibb.co.com/ZY8M9xr/galaxy-s23-ultra.jpg",
+		"category": "Smartphone",
+		"price": 1199.99,
+		"description": "A flagship smartphone with a stunning display and exceptional camera capabilities.",
+		"Specification": [
+			"6.8-inch Dynamic AMOLED 2X display",
+			"Snapdragon 8 Gen 2",
+			"200MP camera system",
+			"512GB storage",
+			"Android 13"
+		],
+		"availability": true,
+		"rating": 4.8
+	},
+	{
+		"product_id": "P109",
+		"product_title": "Apple Watch Series 9",
+		"product_image": "https://i.ibb.co.com/tXd5tXw/apple-watch-series-9.jpg",
+		"category": "Smartwatch",
+		"price": 399.99,
+		"description": "The latest Apple Watch with advanced health features and precision tracking.",
+		"Specification": [
+			"41mm Retina display",
+			"S9 chip",
+			"Heart rate and blood oxygen monitoring",
+			"GPS and Cellular",
+			"watchOS 10"
+		],
+		"availability": true,
+		"rating": 4.7
+	},
+	{
+		"product_id": "P110",
+		"product_title": "Samsung Galaxy Watch 6 Classic",
+		"product_image": "https://i.ibb.co.com/Mkgc1xV/galaxy-watch-6-classic.jpg",
+		"category": "Smartwatch",
+		"price": 349.99,
+		"description": "A stylish smartwatch with a rotating bezel and comprehensive fitness tracking features.",
+		"Specification": [
+			"46mm Super AMOLED display",
+			"Exynos W930 processor",
+			"ECG and blood pressure monitoring",
+			"GPS and LTE",
+			"Wear OS"
+		],
+		"availability": true,
+		"rating": 4.6
+	}
+]
