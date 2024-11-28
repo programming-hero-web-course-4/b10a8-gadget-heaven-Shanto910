@@ -6,7 +6,7 @@
 		"category": "laptops",
 		"price": 2499.99,
 		"description": "The powerful and versatile MacBook Pro with the M1 Pro chip, delivering unmatched performance for professionals.",
-		"Specification": [
+		"specification": [
 			"16-inch Liquid Retina XDR display",
 			"M1 Pro chip with 10-core CPU",
 			"16GB RAM",
@@ -23,7 +23,7 @@
 		"category": "laptops",
 		"price": 1999.99,
 		"description": "An ultra-slim and premium laptop with a stunning OLED display and top-tier performance.",
-		"Specification": [
+		"specification": [
 			"13.4-inch OLED touchscreen",
 			"Intel Core i7-12700H",
 			"16GB RAM",
@@ -40,7 +40,7 @@
 		"category": "laptops",
 		"price": 1699.99,
 		"description": "A sleek 2-in-1 laptop offering premium design and excellent battery life.",
-		"Specification": [
+		"specification": [
 			"13.5-inch OLED display",
 			"Intel Core i7-1260P",
 			"16GB RAM",
@@ -57,7 +57,7 @@
 		"category": "laptops",
 		"price": 1899.99,
 		"description": "Business-class laptop with robust build quality and enterprise features.",
-		"Specification": [
+		"specification": [
 			"14-inch WUXGA display",
 			"Intel Core i7-1360P",
 			"16GB RAM",
@@ -74,7 +74,7 @@
 		"category": "laptops",
 		"price": 1599.99,
 		"description": "A compact and powerful gaming laptop featuring the AMD Ryzen 9 and GeForce RTX 4060.",
-		"Specification": [
+		"specification": [
 			"14-inch QHD+ display",
 			"AMD Ryzen 9 6900HS",
 			"16GB RAM",
@@ -91,7 +91,7 @@
 		"category": "laptops",
 		"price": 2099.99,
 		"description": "A versatile laptop with a unique hinge design for creative professionals.",
-		"Specification": [
+		"specification": [
 			"14.4-inch PixelSense Flow display",
 			"Intel Core i7-11370H",
 			"32GB RAM",
@@ -108,7 +108,7 @@
 		"category": "smartphones",
 		"price": 1199.99,
 		"description": "Apple's most advanced iPhone with a titanium design and the A17 Pro chip.",
-		"Specification": [
+		"specification": [
 			"6.7-inch Super Retina XDR display",
 			"A17 Pro chip",
 			"48MP camera system",
@@ -125,7 +125,7 @@
 		"category": "smartphones",
 		"price": 1199.99,
 		"description": "A flagship smartphone with a stunning display and exceptional camera capabilities.",
-		"Specification": [
+		"specification": [
 			"6.8-inch Dynamic AMOLED 2X display",
 			"Snapdragon 8 Gen 2",
 			"200MP camera system",
@@ -142,7 +142,7 @@
 		"category": "smartwatches",
 		"price": 399.99,
 		"description": "The latest Apple Watch with advanced health features and precision tracking.",
-		"Specification": [
+		"specification": [
 			"41mm Retina display",
 			"S9 chip",
 			"Heart rate and blood oxygen monitoring",
@@ -159,7 +159,7 @@
 		"category": "smartwatches",
 		"price": 349.99,
 		"description": "A stylish smartwatch with a rotating bezel and comprehensive fitness tracking features.",
-		"Specification": [
+		"specification": [
 			"46mm Super AMOLED display",
 			"Exynos W930 processor",
 			"ECG and blood pressure monitoring",

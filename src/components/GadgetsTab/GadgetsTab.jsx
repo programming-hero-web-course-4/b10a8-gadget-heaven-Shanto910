@@ -6,16 +6,18 @@ const GadgetsTab = () => {
 			<NavLink to={'/'} className="rounded-full py-[14px] pl-[22px] bg-[#09080F0d]">
 				All Products
 			</NavLink>
-			<NavLink to={'/laptops'} className="rounded-full py-[14px] pl-[22px] bg-[#09080F0d]">
+			<NavLink
+				to={'/categories/laptops'}
+				className="rounded-full py-[14px] pl-[22px] bg-[#09080F0d]">
 				Laptops
 			</NavLink>
 			<NavLink
-				to={'/smartphones'}
+				to={'/categories/smartphones'}
 				className="rounded-full py-[14px] pl-[22px] bg-[#09080F0d]">
 				Smartphones
 			</NavLink>
 			<NavLink
-				to={'/smartwatches'}
+				to={'/categories/smartwatches'}
 				className="rounded-full py-[14px] pl-[22px] bg-[#09080F0d]">
 				Smartwatches
 			</NavLink>
