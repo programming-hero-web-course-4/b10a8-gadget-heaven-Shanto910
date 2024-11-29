@@ -14,8 +14,7 @@ const Cart = ({ cartList, handleSortByPrice, clearCart }) => {
 
 	const productPrices = cartList.map(i => i.price);
 	const initPrice = 0;
-	const totalPrice = productPrices.reduce((a, c) => a + c, initPrice);
-	const price = (Math.round(totalPrice * 100) / 100).toFixed(2);
+	const price = productPrices.reduce((a, c) => a + c, initPrice).toFixed(2);
 
 	const handlePurchase = () => {
 		setModalPrice(price);
@@ -74,8 +73,8 @@ const Cart = ({ cartList, handleSortByPrice, clearCart }) => {
 				</button>
 			</div>
 			<div className="flex flex-col gap-6 leading-normal">
-				{cartList.map(item => (
-					<CartItem key={item.product_id} item={item} />
+				{cartList.map((item, idx) => (
+					<CartItem key={idx} item={item} />
 				))}
 			</div>
 			<ToastContainer />

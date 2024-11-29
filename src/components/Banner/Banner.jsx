@@ -18,7 +18,7 @@ const Banner = () => {
 				</Link>
 			</section>
 			<div className="flex mx-auto p-6 bg-[#ffffff4d] max-w-[1110px] max-h-[610px] border-[3px] border-white rounded-[32px]">
-				<img className="rounded-3xl object-cover" src="/public/assets/banner.jpg" alt="" />
+				<img className="rounded-3xl object-cover" src="/assets/banner.jpg" alt="" />
 			</div>
 		</>
 	);

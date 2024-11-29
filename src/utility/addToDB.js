@@ -10,13 +10,9 @@ const getStoredCartList = () => {
 
 const addToStoredCartList = id => {
 	const storedList = getStoredCartList();
-	if (storedList.includes(id)) {
-		console.log(id, 'already exists in cart list');
-	} else {
-		storedList.push(id);
-		const storedListStr = JSON.stringify(storedList);
-		localStorage.setItem('cart-list', storedListStr);
-	}
+	storedList.push(id);
+	const storedListStr = JSON.stringify(storedList);
+	localStorage.setItem('cart-list', storedListStr);
 };
 
 const getStoredWishList = () => {

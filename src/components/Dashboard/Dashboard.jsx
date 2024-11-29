@@ -16,7 +16,9 @@ const Dashboard = () => {
 	useEffect(() => {
 		const storedCartList = getStoredCartList();
 
-		const cartItemList = product.filter(item => storedCartList.includes(item.product_id));
+		const cartItemList = storedCartList.map(id => {
+			return product.find(item => item.product_id === id);
+		});
 
 		setCartList(cartItemList);
 	}, [product]);
