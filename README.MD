@@ -73,4 +73,9 @@ This project uses the following techniques to manage and handle data:
     - Users can sort the items in the cart by price in descending order for better shopping experience.
 
 4. **Payment Confirmation Modal**:
+
     - After completing a purchase, a modal is displayed confirming the payment success along with the total price.
+
+5. **Dynamic Route-Based Website Titles**:
+
+    - Each page dynamically updates the browser title (e.g., "Dashboard | Gadget Heaven") for better UX and SEO
