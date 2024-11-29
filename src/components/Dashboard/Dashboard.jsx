@@ -3,6 +3,7 @@ import Cart from '../Cart/Cart';
 import Wishlist from '../Wishlist/Wishlist';
 import { useLoaderData } from 'react-router-dom';
 import { getStoredCartList, getStoredWishList } from '../../utility/addToDB';
+import { Helmet } from 'react-helmet';
 
 const Dashboard = () => {
 	const [cartList, setCartList] = useState([]);
@@ -44,8 +45,15 @@ const Dashboard = () => {
 		setCartList(sort);
 	};
 
+	const clearCart = () => {
+		setCartList([]);
+	};
+
 	return (
 		<section>
+			<Helmet>
+				<title>DashBoard | Gadget Heaven</title>
+			</Helmet>
 			<div className="bg-[#9538E2] flex flex-col gap-4 py-8 text-center">
 				<h2 className="font-bold text-[32px] text-white">Dashboard</h2>
 				<p className="text-white max-w-[78ch] mx-auto">
@@ -75,7 +83,11 @@ const Dashboard = () => {
 			</div>
 
 			{isActive.cart ? (
-				<Cart cartList={cartList} handleSortByPrice={handleSortByPrice} />
+				<Cart
+					cartList={cartList}
+					handleSortByPrice={handleSortByPrice}
+					clearCart={clearCart}
+				/>
 			) : (
 				<Wishlist wishList={wishList} />
 			)}

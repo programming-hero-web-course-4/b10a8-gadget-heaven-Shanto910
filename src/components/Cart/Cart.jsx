@@ -7,8 +7,9 @@ import { useNavigate } from 'react-router';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const Cart = ({ cartList, handleSortByPrice }) => {
+const Cart = ({ cartList, handleSortByPrice, clearCart }) => {
 	const [isModalOpen, setIsModalOpen] = useState(false);
+	const [modalPrice, setModalPrice] = useState(0);
 	const navigate = useNavigate();
 
 	const productPrices = cartList.map(i => i.price);
@@ -17,13 +18,15 @@ const Cart = ({ cartList, handleSortByPrice }) => {
 	const price = (Math.round(totalPrice * 100) / 100).toFixed(2);
 
 	const handlePurchase = () => {
+		setModalPrice(price);
 		if (price <= 0) {
 			toast.error('Your cart is empty', {
 				position: 'bottom-left',
 			});
 		} else {
-			removeFromCartList();
 			setIsModalOpen(true);
+			removeFromCartList();
+			clearCart();
 		}
 	};
 
@@ -45,7 +48,7 @@ const Cart = ({ cartList, handleSortByPrice }) => {
 						<h3 className="text-[24px] font-bold">Payment Successful</h3>
 						<hr className="my-3 w-full border-t" />
 						<p className="text-[#09080F99] mb-2">Thanks for purchasing.</p>
-						<span className="text-[#09080F99] mb-4">Total Price: ${price}</span>
+						<span className="text-[#09080F99] mb-4">Total Price: ${modalPrice}</span>
 						<button
 							onClick={handleCloseModal}
 							className="py-2 bg-[#09080F0d] rounded-full w-full font-semibold">
@@ -83,6 +86,7 @@ const Cart = ({ cartList, handleSortByPrice }) => {
 Cart.propTypes = {
 	cartList: PropTypes.array,
 	handleSortByPrice: PropTypes.func,
+	clearCart: PropTypes.func,
 };
 
 export default Cart;

@@ -8,6 +8,7 @@ import ProductDetails from './components/ProductDetails/ProductDetails';
 import Dashboard from './components/Dashboard/Dashboard';
 import ErrorPage from './components/ErrorPage/ErrorPage';
 import Support from './components/Support/Support';
+import { Helmet } from 'react-helmet';
 
 const router = createBrowserRouter([
 	{
@@ -35,9 +36,14 @@ const router = createBrowserRouter([
 			{
 				path: '/statistics',
 				element: (
-					<div className="text-3xl p-6 h-40 text-center mt-24 grid place-content-center place-items-center">
-						Beep Boop! Nothing to show here yet...
-					</div>
+					<>
+						<Helmet>
+							<title>Statistics | Gadget Heaven</title>
+						</Helmet>
+						<div className="text-3xl p-6 h-40 text-center mt-24 grid place-content-center place-items-center">
+							Beep Boop! Nothing to show here yet...
+						</div>
+					</>
 				),
 			},
 			{

@@ -4,6 +4,7 @@ import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
 import { addToStoredCartList, addToStoredWishList } from '../../utility/addToDB';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Helmet } from 'react-helmet';
 
 const ProductDetails = () => {
 	const { productID } = useParams();
@@ -51,6 +52,9 @@ const ProductDetails = () => {
 
 	return (
 		<section>
+			<Helmet>
+				<title>Details | Gadget Heaven</title>
+			</Helmet>
 			<div className="pd-bg bg-[#9538E2] flex flex-col gap-4 py-8 text-center relative">
 				<h2 className="font-bold text-[32px] text-white">Product Details</h2>
 				<p className="text-white max-w-[78ch] mx-auto">

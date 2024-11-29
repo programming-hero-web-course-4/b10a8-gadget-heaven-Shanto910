@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { FaAngleDown } from 'react-icons/fa6';
+import { Helmet } from 'react-helmet';
 
 const Support = () => {
 	const [openIndex, setOpenIndex] = useState(null);
@@ -10,6 +11,9 @@ const Support = () => {
 
 	return (
 		<div>
+			<Helmet>
+				<title>Support | Gadget Heaven</title>
+			</Helmet>
 			<div className="bg-[#9538E2] flex flex-col gap-4 py-8 text-center">
 				<h2 className="font-bold text-[32px] text-white">Support</h2>
 				<p className="text-white max-w-[78ch] mx-auto">
