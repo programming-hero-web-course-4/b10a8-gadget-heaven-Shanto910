@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from 'react-router-dom';
-import { Link } from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
 import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
+import { addToStoredCartList, addToStoredWishList } from '../../utility/addToDB';
 
 const ProductDetails = () => {
 	const { productID } = useParams();
@@ -25,6 +25,14 @@ const ProductDetails = () => {
 		char: '★',
 		value: rating,
 		edit: false,
+	};
+
+	const handleCart = id => {
+		addToStoredCartList(id);
+	};
+
+	const handleWish = id => {
+		addToStoredWishList(id);
 	};
 
 	return (
@@ -78,17 +86,17 @@ const ProductDetails = () => {
 						</div>
 					</div>
 					<div className="flex gap-4">
-						<Link
-							to={'/cart'}
+						<button
+							onClick={() => handleCart(productID)}
 							className="text-white bg-[#9538E2] text-xl px-[22px] py-3 border rounded-full flex items-center gap-2 leading-none">
 							<span className="text-[18px] font-bold">Add To Card</span>
 							<AiOutlineShoppingCart />
-						</Link>
-						<Link
-							to={'/wishlist'}
+						</button>
+						<button
+							onClick={() => handleWish(productID)}
 							className="text-[#3a3a3a] bg-white text-xl p-3 border border-[#0b0b0b1a] rounded-full">
 							<AiOutlineHeart />
-						</Link>
+						</button>
 					</div>
 				</div>
 			</div>

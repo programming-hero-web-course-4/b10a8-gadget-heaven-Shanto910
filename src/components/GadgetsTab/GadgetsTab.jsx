@@ -21,6 +21,11 @@ const GadgetsTab = () => {
 				className="rounded-full py-[14px] pl-[22px] bg-[#09080F0d]">
 				Smartwatches
 			</NavLink>
+			<NavLink
+				to={'/categories/smartrobots'}
+				className="rounded-full py-[14px] pl-[22px] bg-[#09080F0d]">
+				Smart Robots
+			</NavLink>
 		</div>
 	);
 };
