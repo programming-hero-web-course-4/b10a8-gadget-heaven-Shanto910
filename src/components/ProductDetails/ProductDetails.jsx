@@ -2,6 +2,8 @@ import { useLoaderData, useParams } from 'react-router-dom';
 import ReactStars from 'react-rating-stars-component';
 import { AiOutlineShoppingCart, AiOutlineHeart } from 'react-icons/ai';
 import { addToStoredCartList, addToStoredWishList } from '../../utility/addToDB';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const ProductDetails = () => {
 	const { productID } = useParams();
@@ -28,10 +30,22 @@ const ProductDetails = () => {
 	};
 
 	const handleCart = id => {
-		addToStoredCartList(id);
+		if (availability) {
+			toast.success('Product added to your cart', {
+				position: 'bottom-left',
+			});
+			addToStoredCartList(id);
+		} else {
+			toast.error('This product is out of stock', {
+				position: 'bottom-left',
+			});
+		}
 	};
 
 	const handleWish = id => {
+		toast.success('Product added to your wishlist', {
+			position: 'bottom-left',
+		});
 		addToStoredWishList(id);
 	};
 
@@ -100,6 +114,7 @@ const ProductDetails = () => {
 					</div>
 				</div>
 			</div>
+			<ToastContainer />
 		</section>
 	);
 };

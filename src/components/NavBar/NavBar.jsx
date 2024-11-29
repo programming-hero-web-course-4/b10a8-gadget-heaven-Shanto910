@@ -16,7 +16,7 @@ const NavBar = () => {
 					<Link to={'/'}>
 						<span
 							className={`font-bold text-xl ${
-								isHomePage ? 'text-white' : 'text-[#0b0b0bb3]'
+								isHomePage ? 'text-white' : 'text-[#0b0b0b]'
 							}`}>
 							Gadget Heaven
 						</span>
@@ -41,6 +41,9 @@ const NavBar = () => {
 						</li>
 						<li>
 							<NavLink to={'/dashboard'}>Dashboard</NavLink>
+						</li>
+						<li>
+							<NavLink to={'/support'}>Support</NavLink>
 						</li>
 					</ul>
 				</li>
